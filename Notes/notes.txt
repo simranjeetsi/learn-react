@@ -1,0 +1,23 @@
+Package.json is a  configuration file  for npm it keeps tracks of the packages version installed in our app
+
+Bundler helps to minify,cache and bundle together all the files, so it can be shipped to prod. For example webpack, parcel, vite
+
+npm install -D parcel (two types of dependencies we can isntall one is dev dependency and other is normal, 
+dev dependency is only used using development , 
+normal can be used in prod, so -D will make it a dev dependency)
+
+package-lock.json  keep track of exact version installed , package-lock keeps hash so whatever on my machine installed should be exact same on the prod
+
+node_modules contains all the code we fetched from npm, whenever we install a package
+
+
+npx parcel index.html, npx means executing a package, parcel goes to source index.html it will create a build for our app
+
+CDN links are not a preferred way to add any framework or library, it is a  network call, and we will have to update
+the url whenever the new version releases
+
+Always use npm to install framework or library
+npm install react
+npm install react-dom
+
+npx parcel build index.html to create a prod buid

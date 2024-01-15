@@ -1,0 +1,31 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "Learning React",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simranjeetsi/learn-react.git"
+  },
+  "keywords": [],
+  "author": "Simranjeet Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simranjeetsi/learn-react/issues"
+  },
+  "homepage": "https://github.com/simranjeetsi/learn-react#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
