@@ -21,3 +21,44 @@ npm install react
 npm install react-dom
 
 npx parcel build index.html to create a prod buid
+
+
+// React Elements
+kind of equivalent to DOM Elements
+const heading = React.createElememt(tag, {attributes}, child)
+ex: const heading = React.createElememt(h1, {id:'heading'}, "Hello World")
+
+A react element is an object, when we render this on to the DOM then it becomes html element
+
+// Rendering react element
+
+const root =  ReactDOM.createRoot("document.getElementById("root")");
+root.render(heading); it will replace whatever was in the root html
+
+// JSX - Javascript syntax help in creating react elements more syntactically easy , above syntax is okay but
+get difficult when we have lot of nested elements
+
+JSX is not HTML in Javascript - it is HTML like syntax but not HTML inside Javascript
+
+JSX code is transpiled before it reaches to Javascript engine (converted to the code what browsers , ReactDOM can understand)
+Transpiling is done by Parcel and Parcel is using babel under the hood to transpile
+
+JSX => babel transpile it to React.createElememt => JS OBJECT => HTMLElement(render)
+
+Attributes in JSX uses camel case 
+css class can be given using className
+
+
+If we have JSX in multiple lines we  have to wrap it inside round brackets()
+
+const jsxCode = (<h1 className="head">
+                Hello World
+            </h1>)                              multi lines
+
+const jsxCode = <h1 className="head">Hello World</h1>  single line
+
+
+
+Two ways of creating React components
+1. Class Based components
+2. Functional components = always start with capital alphabet
